@@ -15,7 +15,7 @@ function App() {
           </a>
         </div>
         <div className="Github">
-        <a href="https://github.com/laiseing/character-generator" target="_blank">Github</a>
+        <a href="https://github.com/laiseing/character-generator" target="blank">Github</a>
         </div>
 
 
