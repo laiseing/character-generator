@@ -53,5 +53,12 @@
   background-position: bottom;
   background-size: 100%;
   min-height: 100vh;
+  padding-top: 11rem;
+}
+
+.Main-text {
+  font: "Open Sans";
+  font-size: 24;
+
 }
 
