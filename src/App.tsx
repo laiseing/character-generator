@@ -2,6 +2,7 @@ import React, { CSSProperties } from 'react'
 import ReactDOM from 'react-dom'
 import { Button, Icon, Text, Theme, useStyles } from 'bold-ui'
 import './App.css';
+import logo from './resources/happyd20.svg';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         
         <div className="App-logo">
           <a href=".">
-            <img src="/src/resources/happyd20.svg" alt="A flat style d20 with a smile face"/>
+            <img src={logo} alt="A flat style d20 with a smile face"/>
             <h1>CharGenerator</h1>
           </a>
         </div>
