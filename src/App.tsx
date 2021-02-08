@@ -1,13 +1,16 @@
-import React, { CSSProperties } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Icon, Text, Theme, useStyles } from 'bold-ui'
+import { Button, Text, useStyles } from 'bold-ui'
 import './App.css';
 import logo from './resources/happyd20.svg';
+import {createStyles} from './styles' ;
 
 function App() {
+  const { classes } = useStyles(createStyles);
+
   return (
-    <div className="App">
-      <header className="App-header"> 
+    <div className={classes.App}>
+      <header className={classes.AppHeader}> 
         
         <div className="App-logo">
           <a href=".">
@@ -21,7 +24,7 @@ function App() {
 
 
       </header>
-      <body className="App-body">
+      <body className={classes.AppBody}>
         <h2 className="Main-text">
             Want to create an awesome character?<br/>Well, you can certainly try.
         </h2>
@@ -34,27 +37,5 @@ function App() {
 }
 
 export default App;
-
-const createStyles = (theme: Theme) => ({
-  container: {
-    textAlign: 'center',
-
-    '& > p': {
-      fontSize: '1rem',
-      lineHeight: 2,
-    },
-  } as CSSProperties,
-
-  first: {
-    color: theme.pallete.status.danger.main,
-    '&:hover': {
-      background: theme.pallete.surface.background,
-    },
-  } as CSSProperties,
-
-  second: {
-    background: theme.pallete.surface.background,
-  } as CSSProperties,
-})
 
 
