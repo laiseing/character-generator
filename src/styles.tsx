@@ -1,6 +1,5 @@
 import { Theme } from "bold-ui";
 import { CSSProperties } from "react";
-import Backgroundirado from './resources/Backgroundirado.svg';
 
 export const createStyles = (theme: Theme) => ({
     App: {
@@ -24,7 +23,7 @@ export const createStyles = (theme: Theme) => ({
     } as CSSProperties,
 
     AppBody: {
-      backgroundImage: Backgroundirado,
+      backgroundImage: 'url(/Backgroundirado.svg)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'bottom',
       backgroundSize: '100%',
