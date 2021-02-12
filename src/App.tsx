@@ -11,19 +11,13 @@ function App() {
   return (
     <div className={classes.App}>
       <header className={classes.AppHeader}> 
-        
-        <div className="App-logo">
-          <a href=".">
+         <a className={classes.AppLogo} href=".">
             <img src={logo} alt="A flat style d20 with a smile face"/>
-            <h1>CharGenerator</h1>
+            <h1 className={classes.AppLogoName}>CharGenerator</h1>
           </a>
-        </div>
-        <div className="Github">
-        <a href="https://github.com/laiseing/character-generator" target="blank">Github</a>
-        </div>
-
-
+          <a className={classes.LinkGithub} href="https://github.com/laiseing/character-generator" target="blank">Github</a>
       </header>
+
       <body className={classes.AppBody}>
         <h2 className="Main-text">
             Want to create an awesome character?<br/>Well, you can certainly try.

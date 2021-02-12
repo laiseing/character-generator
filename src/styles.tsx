@@ -1,4 +1,5 @@
-import { Theme } from "bold-ui";
+import { Theme, useTheme } from "bold-ui";
+import { gray, yellow, turquoise } from "bold-ui/lib/styles/colors";
 import { CSSProperties } from "react";
 
 export const createStyles = (theme: Theme) => ({
@@ -22,12 +23,36 @@ export const createStyles = (theme: Theme) => ({
       },
     } as CSSProperties,
 
+    AppLogo: {
+      float: 'left',
+      display: '-webkit-box',
+      textDecorationLine: 'none'
+      } as CSSProperties,
+
+    LinkGithub: {
+      color: yellow.c80,
+      fontWeight: 800,
+      letterSpacing: '0.05rem',
+      float: 'right',
+      margin: 0,
+      lineHeight: '2rem'
+    } as CSSProperties,
+
+    AppLogoName: {
+      marginBlockStart: 0,
+      marginBlockEnd: 0,
+      letterSpacing: '0.1rem',
+      marginLeft: '1rem',
+      color: yellow.c80
+      } as CSSProperties,
+
     AppBody: {
       backgroundImage: 'url(/Backgroundirado.svg)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'bottom',
       backgroundSize: '100%',
       minHeight: '100vh',
-      paddingTop: '11rem'
+      paddingTop: '11rem',
+      color: gray.c100
     } as CSSProperties
   })
