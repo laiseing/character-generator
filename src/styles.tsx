@@ -54,5 +54,31 @@ export const createStyles = (theme: Theme) => ({
       minHeight: '100vh',
       paddingTop: '11rem',
       color: gray.c100
-    } as CSSProperties
+    } as CSSProperties,
+
+    MainText: {
+      lineHeight: '2.25rem',
+    } as CSSProperties,
+
+    TextCard: {
+      color: yellow.c80,
+      fontWeight: 700,
+      letterSpacing: '0.125rem',
+      fontSize: '0.875rem',
+    } as CSSProperties,
+
+    Card: {
+      backgroundColor: gray.c20,
+      marginTop: '1rem',
+      padding: '1rem',
+      minWidth: '18rem',
+    } as CSSProperties,
+
+    Hint: {
+      color: gray.c50,
+      letterSpacing: '0.05rem',
+      fontWeight: 400,
+      fontSize: '0.875rem',
+    }
+
   })
