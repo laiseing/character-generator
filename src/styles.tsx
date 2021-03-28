@@ -1,8 +1,9 @@
-import { Theme, useTheme } from "bold-ui";
+import { Theme, useTheme,Button, colors, createTheme, HFlow } from "bold-ui";
 import { gray, yellow, turquoise } from "bold-ui/lib/styles/colors";
 import { CSSProperties } from "react";
 
 export const createStyles = (theme: Theme) => ({
+
     App: {
       textAlign: 'center',
       backgroundColor: theme.pallete.gray.c10,
@@ -79,6 +80,7 @@ export const createStyles = (theme: Theme) => ({
       letterSpacing: '0.05rem',
       fontWeight: 400,
       fontSize: '0.875rem',
-    }
-
+    },
   })
+
+

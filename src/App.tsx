@@ -1,14 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Text, useStyles, Paper, HFlow, colors } from 'bold-ui'
+import { Button, Text, Paper, HFlow, colors, useStyles, ThemeProvider, createTheme, useTheme, invertColorScale} from 'bold-ui'
 import './App.css';
 import logo from './resources/happyd20.svg';
+import icon from './resources/d20icon.svg';
 import {createStyles} from './styles' ;
+import { styles } from 'bold-ui/lib/components/Dropdown/DropdownMenu';
+import { defaultConfig } from 'bold-ui/lib/styles/theme/createPallete';
+
+const mainTheme = createTheme({
+  pallete: {
+    primaryScale: colors.turquoise,
+
+  },
+})
+
+const darkTheme = createTheme({
+  pallete: {
+    primaryScale: invertColorScale(mainTheme.pallete.primary)
+
+  },
+})
 
 function App() {
   const { classes } = useStyles(createStyles);
-
   return (
+
+
     <div className={classes.App}>
       <header className={classes.AppHeader}> 
          <a className={classes.AppLogo} href=".">
@@ -22,9 +40,12 @@ function App() {
         <h2 className={classes.MainText}>
             Want to create an awesome character?<br/>Well, you can certainly try.
         </h2>
-        <Button kind='primary' size='large'>    
-          <Text color='inherit'>Roll</Text>
-        </Button>
+        <ThemeProvider theme={darkTheme}>
+          <Button kind='primary' size='large' style={{minWidth: '15rem'}}>   
+          <img src={icon} style={{paddingRight: '0.5rem'}}/> 
+            <Text color='inherit'>Roll</Text>
+          </Button>
+        </ThemeProvider>
 
 
         <HFlow
