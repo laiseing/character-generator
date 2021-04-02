@@ -1,4 +1,4 @@
-import { Text, useStyles, ThemeProvider, Grid, Cell } from 'bold-ui'
+import { Button, Text, useStyles, ThemeProvider, Grid, Cell } from 'bold-ui'
 import './App.css';
 import logo from './resources/happyd20.svg';
 import icon from './resources/d20icon.svg';
@@ -6,7 +6,7 @@ import {createStyles} from './styles' ;
 import createTheme from './theme';
 import {ButtonLink} from './components/ButtonLink';
 
-function App() {
+function Character() {
   const { classes } = useStyles(createStyles);
   return (
     <ThemeProvider theme={createTheme}>
@@ -24,10 +24,6 @@ function App() {
       <body className={classes.AppBody}>
         <h2 className={classes.Header2}>Want to create an awesome character?<br/>Well, you can certainly try.</h2>
 
-          <ButtonLink href='/Character' kind='primary' size='large' style={{minWidth: '15rem'}}>   
-          <img src={icon} style={{paddingRight: '0.5rem'}} alt='D20 with a smiling face'/> 
-            <Text>Roll</Text>
-          </ButtonLink>
 
     <Grid gap={2} gapVertical={1} wrap style={{display:'flex', maxWidth:'60rem', margin:'3rem auto 3rem auto'}}>
         
@@ -85,6 +81,6 @@ function App() {
 }
 
 
-export default App;
+export default Character;
 
 
