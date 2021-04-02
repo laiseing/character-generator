@@ -1,5 +1,5 @@
-import { Theme, useTheme,Button, colors, HFlow } from "bold-ui";
-import { gray, yellow, turquoise } from "bold-ui/lib/styles/colors";
+import { Theme } from "bold-ui";
+import { gray, yellow } from "bold-ui/lib/styles/colors";
 import { CSSProperties } from "react";
 
 export const createStyles = (theme: Theme) => ({

@@ -1,6 +1,4 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Button, Text, HFlow, useStyles, ThemeProvider, Grid, Cell} from 'bold-ui'
+import { Button, Text, useStyles, ThemeProvider, Grid, Cell } from 'bold-ui'
 import './App.css';
 import logo from './resources/happyd20.svg';
 import icon from './resources/d20icon.svg';
@@ -26,7 +24,7 @@ function App() {
         <h2 className={classes.Header2}>Want to create an awesome character?<br/>Well, you can certainly try.</h2>
 
           <Button kind='primary' size='large' style={{minWidth: '15rem'}}>   
-          <img src={icon} style={{paddingRight: '0.5rem'}}/> 
+          <img src={icon} style={{paddingRight: '0.5rem'}} alt='D20 with a smiling face'/> 
             <Text>Roll</Text>
           </Button>
 
