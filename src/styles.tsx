@@ -1,4 +1,4 @@
-import { Theme, useTheme,Button, colors, createTheme, HFlow } from "bold-ui";
+import { Theme, useTheme,Button, colors, HFlow } from "bold-ui";
 import { gray, yellow, turquoise } from "bold-ui/lib/styles/colors";
 import { CSSProperties } from "react";
 
@@ -43,6 +43,7 @@ export const createStyles = (theme: Theme) => ({
       marginBlockStart: 0,
       marginBlockEnd: 0,
       letterSpacing: '0.1rem',
+      lineHeight: '2.125rem',
       marginLeft: '1rem',
       color: yellow.c80
       } as CSSProperties,
@@ -54,12 +55,13 @@ export const createStyles = (theme: Theme) => ({
       backgroundSize: '100%',
       minHeight: '100vh',
       paddingTop: '11rem',
+      lineHeight: '2.25rem',
       color: gray.c100
     } as CSSProperties,
 
-    MainText: {
-      lineHeight: '2.25rem',
-    } as CSSProperties,
+   Header2: {
+     marginBottom: '2rem',
+   } as CSSProperties,
 
     TextCard: {
       color: yellow.c80,
@@ -70,9 +72,9 @@ export const createStyles = (theme: Theme) => ({
 
     Card: {
       backgroundColor: gray.c20,
-      marginTop: '1rem',
-      padding: '1rem',
       minWidth: '18rem',
+      lineHeight: '4rem',
+      marginTop: '1rem'
     } as CSSProperties,
 
     Hint: {
