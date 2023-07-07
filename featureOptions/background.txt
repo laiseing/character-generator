@@ -1,0 +1,38 @@
+Acolyte
+Anthropologist
+City Watch
+Cloistered Scholar
+Courtier
+Faction Agent
+Heretic
+Investigator
+Sage
+Archaeologist
+Caravan Specialist
+Clan Crafter
+Far Traveler
+Guild Artisan
+Guild Merchant
+Haunted One
+Hermit
+Hillsfar Smuggler
+Knight
+Knight of the Order
+Noble
+Outlander
+Phlan Refugee
+Uthgardt Tribe Member
+Waterdhavian Noble
+Draconic
+Dragon Casualty
+Dwarvish, Undercommon
+Earthspur Miner
+Elvish
+Cormanthor Refugee
+Trade Sheriff
+Giant
+Ticklebelly Nomad
+Netherese
+Shade Fanatic
+Inheritor
+Mercenary Veteran

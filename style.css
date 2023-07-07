@@ -1,0 +1,148 @@
+.container {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+  }
+  
+  body {
+    background-image: url(bg-irado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #24252E;
+    background-position: bottom;
+    background-size: 100%;
+    min-height: 100vh;
+    line-height: 2.25rem;
+    font-family: 'Source Sans 3', sans-serif;    margin:0;
+  }  
+
+  header {
+    background-color: #24252E;
+    border: 0 0 0 1px solid #24252E;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    padding: 2.5rem;
+    height: 7rem; 
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    color: #E2E2E2;
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  p {
+    color: #E2E2E2;
+    margin: 0;
+    font-weight: 200;
+  }
+
+  a {
+    color: #838390;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #generateBtn {
+    color: #24252E;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #FCCE74;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.60);
+  }
+
+  #generateBtn:hover {
+    background-color: #F8C664;
+  }
+
+  #generateBtn:active {
+    background-color: #F8C664;
+    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.30) inset;
+  }
+
+  #appHeader {
+    text-align: end;
+    background-color: #24252eaf;
+    border: 0 0 0 1px solid #24252E;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #appLogo {
+    float: left;
+    display: -webkit-box;
+    text-decoration-line: none;
+  }
+
+  #quoteContainer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #838390;
+    max-width: 20rem;
+    margin-inline: auto;
+  }
+
+  #bottomText {
+    font-size: 0.9rem;
+    color: #4f4f5b;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 0.5rem 1rem;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .featureBox {
+    display: grid;
+    max-width: 40rem;
+    margin: 0.5rem;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    background-color: #00000040;
+    border-style: solid;
+    border-color: #e2e2e20a;
+    border-width: thin;
+    backdrop-filter: blur(3px);
+    color: #E2E2E2;
+    padding: 0.5rem;
+  }
+
+  .featureTitle {
+    color: #FCCE74;
+    font-weight: bold;
+    display: -webkit-inline-box;
+    margin-left: 0.5rem;
+  }
+
+  .redoIcon {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    vertical-align: sub;
+  }
+  
+  .featureTitle i {
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #characterContainer {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  

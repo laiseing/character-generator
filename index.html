@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Character Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+</style>
+</head>
+<body>
+    <div id="appHeader">
+        <div id="appLogo" href=".">
+            <img src="happyd20.svg" alt="A flat style d20 with a smile face"/>
+            <h1>char.generator</h1>
+        </div>
+          <a className={classes.LinkGithub} href="https://github.com/laiseing/character-generator" target="blank">github</a>
+    </div>
+    <div class="container">
+        <button id="generateBtn" onclick="generateCharacter()">
+            <img src="d20icon.svg" alt="D20 dice icon" style="vertical-align: bottom; margin-bottom: 0.25rem;" />
+            Roll character 
+        </button>
+        <div id="quoteContainer"></div>
+        <div id="characterContainer">
+        </div>
+        
+        <div id="bottomText">All credits on the github page.</div>
+
+    </div>
+    
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>

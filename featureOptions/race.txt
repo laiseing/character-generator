@@ -1,0 +1,7 @@
+Human
+Elf
+Dwarf
+Gnome
+Halfling
+Half-elf
+Half-orc
