@@ -48,7 +48,7 @@
   
   #generateBtn {
     color: #24252E;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     font-size: 1.5rem;
     border-radius: 0.5rem;
     background-color: #FCCE74;
@@ -57,6 +57,10 @@
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 700;
     box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.60);
+  }
+
+  #generateIcon {
+    margin-bottom: 0.3rem;
   }
 
   #generateBtn:hover {
@@ -144,5 +148,56 @@
     font-weight: bold;
   }
 
-
-  
+  @media (max-width: 980px) {
+    #generateBtn {
+        padding: 2rem 3rem;
+        font-size: 4rem;
+        border-radius: 1rem;
+    }
+    #generateIcon {
+        width: 5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+    #bottomText {
+        font-size: 2.5rem;
+        padding: 0 0 1rem 1rem;
+    }
+    #quoteContainer {
+        margin-top:2rem;
+        font-size: 2.5rem;
+        max-width: 80%;
+    }
+    a {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .container {
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+    }
+    #logoIcon {
+        width: 4rem;
+    }
+    #appHeader {
+        padding: 4rem;
+    }
+    #characterContainer {
+        margin-top: 6rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .featureBox {
+        display: grid;
+        max-width: 40rem;
+        margin: 2rem;
+        margin-inline: auto;
+        padding: 2rem;
+        line-height: 5.5rem;
+    }
+    .redoIcon {
+        width: 4rem;
+    }
+}
